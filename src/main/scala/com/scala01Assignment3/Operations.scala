@@ -41,7 +41,7 @@ class Operations {
   def lengthOfList(list: List[Int]): Int = {
       def length (number:Int, list:List[Int]):Int = list match {
         case Nil => number
-        case _::tail => length(number + 1, tail)
+        case head::tail => length(number + 1, tail)
       }
      val listLength = length(0,list)
     listLength
