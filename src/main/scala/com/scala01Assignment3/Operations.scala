@@ -24,9 +24,9 @@ class Operations {
 
   def findKthElement(kthElement: Int, args: List[Int]): Unit = {
 
-    val index = for (i <- 0 until args.length) yield if (i == 2) print(s"\nElement at position $kthElement = ${args(i)}")
+   val index =for (i <- 0 until args.length) yield if (i == 2) print(s"\nElement at position $kthElement = ${args(i)}")
 
-  }
+      }
 
 
   def reverseList(list: List[Int]): List[Int] = {
@@ -43,8 +43,7 @@ class Operations {
         case Nil => number
         case head::tail => length(number + 1, tail)
       }
-     val listLength = length(0,list)
-    listLength
+     length(0,list)
     }
 
   def area(shape: String, first: Int, second: Int, f:(Int,Int) => Int):String = {
